@@ -1,12 +1,17 @@
+@font-face {
+    font-family: "fnt";
+    src: url(fonts/playfairdisplay-variablefont_wght-webfont.woff) format("woff"),
+         url(fonts/playfairdisplay-variablefont_wght-webfont.woff2) format("woff2");
+}
+
 * {
-    font-family: 'arima';
+    font-family: 'fnt';
     margin: 0;
     padding: 0;
 }
 
 header {
-    padding: 5%;
-    padding-bottom: 2%;
+    padding: 2%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     border-bottom: 1px solid slategray;
@@ -380,8 +385,14 @@ h1 {
 }
 
 .formblk textarea {
-    margin-top: 1%;
-    width: 100%;
+    margin: 0 2.5%;
+    width: 90%;
+    resize: vertical;
+}
+
+.messageblk {
+    width: 95%;
+    padding: 0 5%;
 }
 
 .formblk>div:nth-child(4) div {
@@ -427,8 +438,8 @@ footer {
 
 footer .ftr {
     display: flex;
-    justify-self: center;
-    gap: 5%;
+    justify-content: center;
+    gap: 2%;
 }    
 
 footer .ftr div {
@@ -436,7 +447,7 @@ footer .ftr div {
     height: 30px;
     border: 2px solid slategray;
     border-radius: 50%;
-    padding: 3%;
+    padding: 1%;
 }
 
 footer .ftr img {
